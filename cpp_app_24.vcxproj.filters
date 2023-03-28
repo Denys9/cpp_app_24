@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="domain">
+      <UniqueIdentifier>{ee51b536-cb7f-4b21-9a7b-06afc3a7eb1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{7c2bdb54-c364-4b74-88a3-64cf26acdb0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="presentation">
+      <UniqueIdentifier>{7d3ed98b-86eb-4895-bf5d-943dd5dcb4b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="internal">
+      <UniqueIdentifier>{671450af-011b-4da6-846b-728f97ffb0c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="domain\models">
+      <UniqueIdentifier>{d2574052-d049-47c5-bbe2-f96efe394f7c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Account.h">
+      <Filter>domain\models</Filter>
+    </ClInclude>
+    <ClInclude Include="Admin.h">
+      <Filter>domain\models</Filter>
+    </ClInclude>
+    <ClInclude Include="Phone.h">
+      <Filter>domain\models</Filter>
+    </ClInclude>
+    <ClInclude Include="Library.h">
+      <Filter>internal</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
+      <Filter>domain\models</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Application.cpp">
+      <Filter>internal</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

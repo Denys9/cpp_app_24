@@ -1,11 +1,9 @@
 #include <iostream>
 #include <string>
 #include <windows.h>
-
-using std::cout;
-using std::endl;
-using std::cin;
-using std::string;
+#include <fstream>
+#include <istream>
+using namespace std;
 
 #define ukr_lang { SetConsoleCP(1251); SetConsoleOutputCP(1251); }
 #define print(val) { cout << val; }

@@ -3,20 +3,32 @@
 struct Account
 {
 private:
-	string login;
+	string name;
+	string surname;
+	string email;
 	string password;
 	bool isAdmin;
 public:
 	Account() = default;
 	Account(string login, string password, bool isAdmin)
 	{
-		this->login = login;
+		this->name = name;
+		this->surname = surname;
+		this->email = email;
 		this->password = password;
 		this->isAdmin = isAdmin;
 	}
-	string getLogin()
+	string getName()
 	{
-		return this->login;
+		return this->name;
+	}
+	string getSurname()
+	{
+		return this->surname;
+	}
+	string getEmail()
+	{
+		return this->email;
 	}
 	string getPassword()
 	{
@@ -26,9 +38,17 @@ public:
 	{
 		return this->isAdmin;
 	}
-	void setLogin(string login)
+	void setName(string name)
 	{
-		this->login = login;
+		this->name = name;
+	}
+	void setSurname(string surname)
+	{
+		this->surname = surname;
+	}
+	void setEmail(string email)
+	{
+		this->email = email;
 	}
 	void setPassword(string password)
 	{
@@ -40,7 +60,9 @@ public:
 	}
 	void about()
 	{
-		println("Login: " << this->login);
+		println("Name: " << this->name);
+		println("Surname: " << this->surname);
+		println("Email: " << this->email);
 		println("Password: " << this->password);
 		println("Is admin: " << this->isAdmin);
 	}

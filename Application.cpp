@@ -26,20 +26,3 @@ int main() {
     registerAccount();
     return 0;
 }
-
-
-
-
-
-RUN_APP
-{
-	ukr_lang;
-	
-    registerAccount();
-	return 0;
-
-
-	
-
-
-}
